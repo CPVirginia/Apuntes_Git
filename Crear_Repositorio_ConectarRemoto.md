@@ -2,8 +2,8 @@
 
 ## Comandos para crear tu repositorio local
 
-### PASO 1
-1. Crear un directorio en tu Pc y ejecutar
+### PASOS
+## - 1. Crear un directorio en tu Pc y ejecutar
 
 - `git init` ---> iniciar el directorio.
 
@@ -12,15 +12,15 @@ Archivos que no se deben versionar:
 
 - .gitignore: añadir archivos y directorios que no queremos versionar
 
-2. Configurar la sesion: para el usuario
+## - 2. Configurar la sesion: para el usuario
 `git config --global user.name "Vike"`
 `git config --global user.email "vike@gmail.com"`
 
-3. Ver staus: muestra en que usuario estoy y mas
+## - 3. Ver staus: muestra en que usuario estoy y mas
 `git config --list`
 
 
-4. Agregar archivos 
+## - 4. Agregar archivos 
 `git add . ó git add --all`: estos pasan al stagin area
 
 *`git diff --cached`: ver los cambios que estamos por guardar.
@@ -30,7 +30,7 @@ Archivos que no se deben versionar:
 *Si queremos quitar los archivos del staging area
 `git rm --cached namearchivo` *
 
-5. Agregar Mensaje del commit: muestra que se hizo
+## - 5. Agregar Mensaje del commit: muestra que se hizo
 `git commit -m "mi primer commit"` 
 --El msj debe ser conciso,corto, claro y con cierto formato.
 
@@ -38,9 +38,9 @@ Archivos que no se deben versionar:
 `git commit -a -m "msj"`
 --Solo para archivos que hayan sido versionados y modificados *
 
-6. `git log` : ver el historial de commits
+## - 6. `git log` : ver el historial de commits
 
-7. `git log` --graph --online : es mas resumido, muestra el hash(7 digitos)
+## 7. `git log` --graph --online : es mas resumido, muestra el hash(7 digitos)
 * es cada commit, solo muestra los mjs del commit.
 
 
@@ -48,23 +48,23 @@ Archivos que no se deben versionar:
 # Sincronizar Repositorio local con el remoto 
 
 
-1. `git remote -v` : muestra los repo que ya estan conectados.
+## 1. `git remote -v` : muestra los repo que ya estan conectados.
 ---Si no muestra nada, es que aun no esta configurado.
 ---Puede haber mas de un remoto.
 
-2. Ir a github y crear un repositorio.
+## 2. Ir a github y crear un repositorio.
 
-3. `git remote add origin https://github.com/UsuarioGit/NameReporitory.git`
+## 3. `git remote add origin https://github.com/UsuarioGit/NameReporitory.git`
 
-4. Crear un proyecto en gitlab, y copiar la url para hacer un push tambien a gitlab
+## 4. Crear un proyecto en gitlab, y copiar la url para hacer un push tambien a gitlab
 `git remote add gitlab https://gitlab.com/UsuarioGit/NameReporitory.git` 
 
 *Conclusion: hay dos repos remotos conectados a un repo local*
 
-5. Hacer push: es sincronizar de manera local a remota un repositorio.
+## 5. Hacer push: es sincronizar de manera local a remota un repositorio.
 ---Subir los commit locales a github.
 
-6. Push
+## 6. Push
 ```
 git push [remoto] [rama]----> Del repo local al remoto
 git push -u origin main
