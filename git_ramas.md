@@ -51,8 +51,14 @@ git merge develop
 se pone no forward; comado:
 `git merge --no-ff develop`
 
-Para guardar los cambios: esc + .. +wq 
-salir sin guardar esc + .. + q¡!
+For Vi or Vim
+If you are using vi or vim, to manage to get out, you’ll have to do :
+
+Press “i” (i for insert)
+Write your merge message
+Press “esc” (escape)
+Write “:wq” (write & quit)
+Then press enter
 
 ## 9. Borrar rama remota
 git push origin --delete develop
