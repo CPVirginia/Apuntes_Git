@@ -67,8 +67,8 @@ Archivos que no se deben versionar:
 6. Push
 ```
 git push [remoto] [rama]----> Del repo local al remoto
-git push origin main
-git push gitlab main
+git push -u origin main
+git push -u gitlab main
 ```
 
 
